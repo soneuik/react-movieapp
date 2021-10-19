@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
-import Axios from 'axios'
-import { response } from 'express'
+import Axios from 'axios' 
+
 function Favorite(props) {
 
     const movieId = props.movieId
@@ -21,7 +21,7 @@ function Favorite(props) {
         Axios.post('/api/favorite/favoriteNumber', variables)
         .then(response =>{
             if(response.data.success){
-
+                console.log()
             }else{
                 alert('failed to get number information.')
             }
