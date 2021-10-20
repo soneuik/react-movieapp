@@ -5,7 +5,7 @@ import { Button } from 'antd';
 function Favorite(props) {
     const userFrom = props.userFrom
     const movieId = props.movieId 
-    const movieTitle = props.movieInfo.movieTitle
+    const movieTitle = props.movieInfo.title
     const moviePost = props.movieInfo.backdrop_path
     const movieRunTime = props.movieInfo.runtime
 
@@ -72,8 +72,8 @@ function Favorite(props) {
             Axios.post('/api/favorite/addToFavorite', variables)
             .then(response =>{
                 if(response.data.success){
-                    console.log('userFrom', userFrom)
-                    console.log(response.data)
+                    console.log('movieTitle', movieTitle)
+                   // console.log(response.data)
                     setFavoriteNumber(FavoriteNumber+1)
                     setFavorited(!Favorited)    
                 }else{

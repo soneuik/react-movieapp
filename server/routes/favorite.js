@@ -38,7 +38,7 @@ router.post('/favorited', (req, res) =>{
 
     router.post('/addToFavorite', (req, res) =>{ 
 
-        console.log(req.body)
+        //console.log(req.body)
         //instance 생성
         const favorite =  new Favorite(req.body)
 
@@ -58,6 +58,18 @@ router.post('/favorited', (req, res) =>{
                     if(err) return res.status(400).send(err)
                     res.status(200).json({success: true, doc})  //MongoDb에서 보내준 정보는 doc에 저장된다.
                 })
+    
+        })
+
+          
+    router.post('/getFavoriteMovie', (req, res) =>{
+
+         Favorite.find({'userFrom':req.body.userFrom})
+         .exec((err, favorites)=>{
+             if(err) return res.status(400).send(err)
+
+             return res.status(200).json({success:true,favorites})
+         })
     
         })
 
