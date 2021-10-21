@@ -1,4 +1,9 @@
 # react-movieapp!
+# How to set up 
+1. npm install
+2. cd client
+3. npm install
+4. dev.js file is needed in /react-movieapp-main\server\config to store the ID and PW for MongoDB account. 
 
 #Landing Page to show the most recent movies
 ![landing page](https://user-images.githubusercontent.com/31829350/138244139-fcd89c70-361b-4dd0-9b7e-8e648baa037d.png)
