@@ -74,7 +74,22 @@ router.post('/favorited', (req, res) =>{
         })
 
 
+        router.post('/removeFromFavorite', (req, res) =>{
 
+            //DB에서 해당 값 이용해서 찾은후에 삭제하기.
+                Favorite.findOneAndDelete({movieId: req.body.movieId, userFrom: req.body.userFrom})
+                    .exec((err, doc) =>{
+                        if(err) return res.status(400).send(err)
+                        res.status(200).json({success: true})  //MongoDb에서 보내준 정보는 doc에 저장된다.
+                    })
+        
+            })
+
+
+
+
+
+        
  
 
 
