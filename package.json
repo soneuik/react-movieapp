@@ -26,6 +26,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.4.20",
     "react-redux": "^5.0.7",
+    "react-scripts": "^4.0.3",
     "saslprep": "^1.0.3",
     "supports-color": "^7.1.0"
   },
