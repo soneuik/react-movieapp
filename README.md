@@ -5,7 +5,9 @@
 
 
 #Detail Page to show details of the movie picked by a user
-![detail page](https://user-images.githubusercontent.com/31829350/138244296-c2c22069-28b1-4a5c-9002-1edcfa25f4c3.png)
+[detail page](https://user-images.githubusercontent.com/31829350/138244296-c2c22069-28b1-4a5c-9002-1edcfa25f4c3.png)
+[detail2](https://user-images.githubusercontent.com/31829350/138244526-df88917f-addc-4f8c-a808-c426a3ec5cd3.png)
+
 
 
 #Favorite Page to show movies that a user stored as their favorite
